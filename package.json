@@ -46,7 +46,9 @@
     "build": "npm run less && browserify js/index.js -o assets/bundle.js",
     "less": "lessc less/style.less assets/style.css",
     "start": "npm run less && concurrently \"npm run watchify\" \"autoless less/ assets/\" \"npm run dev_appserver\"",
-    "watchify": "watchify js/index.js --debug -o assets/bundle.js --verbose"
+    "watchify": "watchify js/index.js --debug -o assets/bundle.js --verbose",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "author": "Google Creative Lab",
   "contributors": [
@@ -69,7 +71,8 @@
     "watchify": "^3.9.0",
     "whatwg-fetch": "^2.0.3",
     "@magenta/music-vae": "^1.0.3",
-    "startaudiocontext" : "^1.2.1"
+    "startaudiocontext": "^1.2.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "animitter": "^3.0.0",
@@ -85,5 +88,6 @@
     "page": "^1.8.3",
     "throttleit": "^1.0.0",
     "tone-piano": "^0.0.5"
-  }
+  },
+  "snyk": true
 }
