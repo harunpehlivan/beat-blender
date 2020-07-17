@@ -62,7 +62,7 @@
     "browserify": "^14.5.0",
     "concurrently": "^3.5.0",
     "debounce": "^1.1.0",
-    "less": "^2.7.3",
+    "less": "^3.0.2",
     "query-string": "^6.0.0",
     "shortid": "^2.2.8",
     "tone": "^0.11.11",
